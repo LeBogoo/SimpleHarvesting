@@ -1,0 +1,8 @@
+name: SimpleHarvesting
+version: '1.0-SNAPSHOT'
+main: me.lebogo.simpleHarvesting.SimpleHarvesting
+api-version: '1.20'
+prefix: SH
+authors: [ LeBogo ]
+description: Adds a special hoe for mass-harvesting crops
+website: https://lebogo.me
