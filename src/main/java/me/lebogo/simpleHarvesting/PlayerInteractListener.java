@@ -36,6 +36,9 @@ public class PlayerInteractListener implements Listener {
         List<Component> lore = itemMeta.lore();
         if (lore == null) return;
 
+        boolean isHarvestHoe = !lore.isEmpty() && lore.getFirst().equals(SimpleHarvesting.harvestModeEnabledComponent) || lore.getFirst().equals(SimpleHarvesting.harvestModeDisabledComponent);
+        if (!isHarvestHoe) return;
+
         boolean harvestModeEnabled = !lore.isEmpty() && lore.getFirst().equals(SimpleHarvesting.harvestModeEnabledComponent);
 
         List<Component> newLore = new ArrayList<>(lore);
